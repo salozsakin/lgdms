@@ -8,7 +8,7 @@ tasks:
       lando composer require drush/drush
       lando composer install
       
-      chmod ug+w -R /workspace/localgov_microsites_project/sites/default/
+      chmod ug+w -R /workspace/lgdms/sites/default/
       lando drush si -y --account-pass=admin --site-name='lgdms' --db-url=mysql://lgdms:lgdms@lgdms/lgdms demo_umami
     command: |
       # start a rebuild  with actual networking service (prebuild uses different) - 
